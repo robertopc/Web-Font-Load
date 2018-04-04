@@ -8,7 +8,7 @@ elif [[ "$osdetect" == 'Linux' ]]; then
   if [[ -d /usr/local/share/fonts/ ]]; then # Debian/Ubuntu and others.
     file_path="sudo rm /usr/local/share/fonts/"
   elif [[ -d /usr/share/fonts/ ]]; then # OpenSUSE, Arch and other distros using this directory structure
-    file_path="sudo rm /usr/local/share/fonts/google/"
+    file_path="sudo rm /usr/share/fonts/google/"
   else # Fallback to installing fonts locally to the user, this is a safe bet, as several distros use this location.
     file_path="rm ~/.fonts/"
   fi

@@ -10,7 +10,7 @@ elif [[ "$osdetect" == 'Linux' ]]; then
     file_path="/usr/local/share/fonts/"
   elif [[ -d /usr/share/fonts/ ]]; then # OpenSUSE, Arch and other distros using this directory structure
     sudo mkdir -p /usr/share/fonts/google/
-    file_path="/usr/local/share/fonts/google/"
+    file_path="/usr/share/fonts/google/"
   else # Fallback to installing fonts locally to the user, this is a safe bet, as several distros use this location.
     mkdir -p ~/.fonts
     file_path="~/.fonts/"
