@@ -3,13 +3,13 @@
 # OS detection
 osdetect=$(uname)
 file_path="unknown"
-if [ "$osdetect" == 'Darwin' ]]; then
+if [[ "$osdetect" == 'Darwin' ]]; then
   file_path="/Library/Fonts/"
 elif [[ "$osdetect" == 'Linux' ]]; then
   if [[ -d /usr/local/share/fonts/ ]]; then # Debian/Ubuntu and others.
     file_path="/usr/local/share/fonts/"
   elif [[ -d /usr/share/fonts/ ]]; then # OpenSUSE, Arch and other distros using this directory structure
-    mkdir -p /usr/share/fonts/google/
+    sudo mkdir -p /usr/share/fonts/google/
     file_path="/usr/local/share/fonts/google/"
   else # Fallback to installing fonts locally to the user, this is a safe bet, as several distros use this location.
     mkdir -p ~/.fonts
