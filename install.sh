@@ -20,13 +20,13 @@ fi
 clear
 echo "Installing all Google Web Fonts onto your System"
 echo "Downloading the fonts..."
-curl -L https://github.com/google/fonts/tarball/master -o ~/Documents/master.tar.gz
+curl -L https://github.com/google/fonts/tarball/master -o /tmp/master.tar.gz
 echo "Extracting the fonts..."
-mkdir -p ~/Documents/goog-fonts/fonts
-tar -zxf ~/Documents/master.tar.gz -C ~/Documents/goog-fonts/fonts
+mkdir -p /tmp/goog-fonts/fonts
+tar -zxf /tmp/master.tar.gz -C /tmp/goog-fonts/fonts
 sudo find goog-fonts/fonts/ -type f -name "*.ttf" -exec cp {} $file_path \;
 
 echo "Fonts installed; Cleaning up files..."
-rm -f ~/Documents/master.tar.gz
-rm -rf ~/Documents/goog-fonts
+rm -f /tmp/master.tar.gz
+rm -rf /tmp/goog-fonts
 echo "All done! All Google Fonts installed."

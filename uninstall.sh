@@ -19,7 +19,7 @@ fi
 clear
 echo "Un-Installing all Google Web Fonts onto your System"
 echo "Downloading font list..."
-cd ~/Documents/
+cd /tmp/
 
 curl -L https://raw.githubusercontent.com/qrpike/Web-Font-Load/master/list-of-fonts.txt -o list-of-fonts.txt
 
