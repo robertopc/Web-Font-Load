@@ -6,28 +6,11 @@
 
 Easily install ALL of Google's Web Fonts using the following command in your terminal.
 
-### Mac users
+### Linux and Mac users
 
 ```bash
-curl https://raw.githubusercontent.com/qrpike/Web-Font-Load/master/install.sh | sh
+curl https://raw.githubusercontent.com/qrpike/Web-Font-Load/master/install.sh | bash
 ```
-
-### Linux
-
-#### Debian users
-
-```bash
-curl https://raw.githubusercontent.com/qrpike/Web-Font-Load/master/install_debian.sh | sh
-```
-
-#### Arch Linux Users
-
-```bash
-curl https://raw.githubusercontent.com/qrpike/Web-Font-Load/master/install_arch.sh | sh
-```
-
-The Debian install script should work for most Linux distros. Arch requires a special installation
-due to differences in the folder structure. You can compare the scripts to take a look at this.
 
 ### Updating
 
@@ -39,10 +22,10 @@ You may need to restart for Font Book to pick up the new fonts.
 
 When using this script, it installs A LOT of ( ~1660 ) fonts. You may have to disable "Font Preview" in Photoshop.
 
-### Uninstall all Fonts: (Mac only)
+### Uninstall all Fonts:
 
 ``` bash
-curl https://raw.githubusercontent.com/qrpike/Web-Font-Load/master/uninstall.sh | sh
+curl https://raw.githubusercontent.com/qrpike/Web-Font-Load/master/uninstall.sh | bash
 ```
 
 ### Like this? Please follow the authors on Twitter
@@ -50,4 +33,3 @@ curl https://raw.githubusercontent.com/qrpike/Web-Font-Load/master/uninstall.sh 
 [Quinton Pike - @quintonpike](https://twitter.com/QuintonPike)
 
 [Peter Stacho - @stacho](https://twitter.com/stacho)
-
