@@ -1,8 +1,18 @@
 #!/bin/bash
-# For OS X-based systems.
+
+# OS detect 
+osdetect=$(uname)
+file_path="unknown"
+if [[ "$osdetect" == 'Linux' ]]; then
+    file_path="sudo mv fonts/* /usr/local/share/fonts/"
+elif [[ "$osdetect" == 'Darwin' ]]; then
+    file_path="mv fonts/* /Library/Fonts/"
+elif [[ "$osdetect" == 'Arch Linux' ]]; then
+    file_path="sudo mv fonts/* /usr/share/fonts/"
+fi
 
 clear
-echo "Installing all Google Web Fonts onto your Mac"
+echo "Installing all Google Web Fonts onto your System"
 echo "Downloading the fonts..."
 cd ~/Documents/
 curl -L https://github.com/google/fonts/tarball/master -o master.tar.gz
@@ -22,7 +32,7 @@ rm *.py
 rm AUTHORS
 rm CONTRIBUTORS
 cd ..
-mv fonts/* /Library/Fonts/
+$file_path
 
 echo "Fonts installed; Cleaning up files..."
 cd ~/Documents/
