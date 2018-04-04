@@ -9,7 +9,7 @@ Easily install ALL of Google's Web Fonts using the following command in your ter
 ### Linux and Mac users
 
 ```bash
-curl https://raw.githubusercontent.com/qrpike/Web-Font-Load/master/install.sh | sh
+curl https://raw.githubusercontent.com/qrpike/Web-Font-Load/master/install.sh | bash
 ```
 
 ### Updating
@@ -25,7 +25,7 @@ When using this script, it installs A LOT of ( ~1660 ) fonts. You may have to di
 ### Uninstall all Fonts:
 
 ``` bash
-curl https://raw.githubusercontent.com/qrpike/Web-Font-Load/master/uninstall.sh | sh
+curl https://raw.githubusercontent.com/qrpike/Web-Font-Load/master/uninstall.sh | bash
 ```
 
 ### Like this? Please follow the authors on Twitter
@@ -33,4 +33,3 @@ curl https://raw.githubusercontent.com/qrpike/Web-Font-Load/master/uninstall.sh 
 [Quinton Pike - @quintonpike](https://twitter.com/QuintonPike)
 
 [Peter Stacho - @stacho](https://twitter.com/stacho)
-
